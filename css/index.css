@@ -2,10 +2,9 @@
 .links-mix {
   text-decoration: none;
   justify-content: space-between;
-  margin: 4%;
   color: #5E6164;
 }
-.margin-mix {
+.mar-mix {
   margin: 4%;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -184,8 +183,8 @@ nav .heading {
 nav a {
   text-decoration: none;
   justify-content: space-between;
-  margin: 4%;
   color: #5E6164;
+  margin: 4%;
 }
 footer {
   color: #22283B;
@@ -239,6 +238,16 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  background-color: main-font-color;
+  color: white;
+  padding: 1%;
+}
+.btn:hover .home .walk .walk-text .btn {
+  background-color: white;
+  color: main-font-color;
+  padding: 1%;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -247,4 +256,24 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .intro {
+    width: 90%x;
+  }
+  .intro .blast {
+    width: 100%;
+    height: auto;
+  }
+  .sky {
+    Display: none;
+  }
+  .launch {
+    Display: none;
+  }
+  .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
 }

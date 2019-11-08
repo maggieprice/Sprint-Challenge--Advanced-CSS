@@ -58,6 +58,12 @@
       }
 
       .btn {
+        .butn(main-font-color, white, 1%);
+    
+        .btn:hover & {
+          .butn(white, main-font-color, 1%);
+
+        }
       }
     }
 
@@ -73,3 +79,25 @@
     }
   }
 }// home
+
+@media (max-width: @phone){
+  .intro {
+  width:90%x;
+  .blast {
+    width: 100%;
+    height:auto;
+  }
+}
+  .sky {
+    Display: none;
+  }
+  .launch {
+    Display: none;
+  }
+  .walk {
+    display: flex;
+    flex-direction:column-reverse;
+    width:100%;
+  }
+  
+  }

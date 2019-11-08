@@ -58,11 +58,12 @@
       }
 
       .btn {
-        .butn(main-font-color, white, 1%);
+        button {
+          .butn(blue, white, 1%);
     
-        .btn:hover & {
-          .butn(white, main-font-color, 1%);
-
+          &:hover {
+            .butn(white, main-font-color, 1%);
+          }
         }
       }
     }
@@ -81,23 +82,37 @@
 }// home
 
 @media (max-width: @phone){
-  .intro {
-  width:90%x;
-  .blast {
-    width: 100%;
-    height:auto;
+  .home { 
+    .walk {
+    width:100%;
+    Display:flex;
+    flex-direction: column-reverse;
+    align-items:center;
+    padding:0;
+   
+
+    .walk-text{
+
+      width:90%;
+    }
+    .walk-img{
+      width: 90%;
+      
+    }
   }
-}
+  .space-images{ 
+    display: flex;
+
   .sky {
     Display: none;
   }
   .launch {
     Display: none;
   }
-  .walk {
-    display: flex;
-    flex-direction:column-reverse;
-    width:100%;
+  .blast {
+    width:80%;
+    justify-content: center;
   }
-  
+}
+
   }

@@ -238,12 +238,12 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
-  background-color: main-font-color;
+.home .walk .walk-text .btn button {
+  background-color: blue;
   color: white;
   padding: 1%;
 }
-.btn:hover .home .walk .walk-text .btn {
+.home .walk .walk-text .btn button:hover {
   background-color: white;
   color: main-font-color;
   padding: 1%;
@@ -258,22 +258,30 @@ footer {
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  .intro {
-    width: 90%x;
-  }
-  .intro .blast {
+  .home .walk {
     width: 100%;
-    height: auto;
-  }
-  .sky {
-    Display: none;
-  }
-  .launch {
-    Display: none;
-  }
-  .walk {
-    display: flex;
+    Display: flex;
     flex-direction: column-reverse;
-    width: 100%;
+    align-items: center;
+    padding: 0;
+  }
+  .home .walk .walk-text {
+    width: 90%;
+  }
+  .home .walk .walk-img {
+    width: 90%;
+  }
+  .home .space-images {
+    display: flex;
+  }
+  .home .space-images .sky {
+    Display: none;
+  }
+  .home .space-images .launch {
+    Display: none;
+  }
+  .home .space-images .blast {
+    width: 80%;
+    justify-content: center;
   }
 }

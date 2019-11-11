@@ -59,10 +59,13 @@
 
       .btn {
         button {
-          .butn(blue, white, 1%);
+          .butn(@header-font-color, white, 1%);
+          border-radius: 4px;
+          border:none;
+          width:6rem;
     
           &:hover {
-            .butn(white, main-font-color, 1%);
+            .butn(white, @header-font-color, 1%);
           }
         }
       }
@@ -79,10 +82,14 @@
       }
     }
   }
-}// home
+}
+.form {
+  Margin:5%;
+}
+// home
 
 @media (max-width: @phone){
-  .home { 
+  .home {
     .walk {
     width:100%;
     Display:flex;
@@ -90,29 +97,47 @@
     align-items:center;
     padding:0;
    
-
-    .walk-text{
-
+      .walk-text{
       width:90%;
-    }
-    .walk-img{
-      width: 90%;
+    
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button { width:100%;
+          height:5rem;
+          .butn{ 
+        }}
+      }}
+      
+      .walk-img{
+      width: 90%;   
+      padding-top:5%;
+      margin:0;        
+      }
       
     }
-  }
-  .space-images{ 
-    display: flex;
+  } 
+}
+  @media (max-width: @phone){
+    .home {
 
-  .sky {
-    Display: none;
-  }
-  .launch {
-    Display: none;
-  }
-  .blast {
-    width:80%;
-    justify-content: center;
+    .space-images{ 
+      display: flex;
+      width:100%;
+      flex:wrap;
+      justify-content: center;
+
+      .sky {
+      Display: none;
+      }
+      .launch {
+      Display: none;
+      }
+      .blast {
+      width:90%;
+      height:90%;
+      }
+    }
   }
 }
-
-  }
